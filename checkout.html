@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get My Rec Rev Kit | NewMRR</title>
+  <meta name="description" content="Unlock your Rec Rev Kit for a small beta fee." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="index.html" aria-label="NewMRR home"><span class="mark">↻</span><span>NewMRR</span></a>
+    <nav><a href="kit.html">Back</a><a href="index.html" class="btn small">Home</a></nav>
+  </header>
+  <main>
+    <section class="kit-hero pay-hero">
+      <p class="eyebrow">Beta pass</p>
+      <h1>Get your first Rec Rev Kit.</h1>
+      <p class="lead">This is a low cost first pass. It gives you an offer, price test, pitch, lead plan, proof score, and next step.</p>
+    </section>
+    <section class="pay-shell">
+      <div class="pay-card">
+        <span class="price">$10</span>
+        <h2>Founder Skill Map Kit</h2>
+        <p>For the first small test. Low cost. Fast start.</p>
+        <ul>
+          <li>One line offer</li>
+          <li>Buyer and pain</li>
+          <li>Rec rev model</li>
+          <li>3 price tests</li>
+          <li>Text and email pitch</li>
+          <li>First 10 lead plan</li>
+          <li>Proof score</li>
+        </ul>
+        <a id="payLink" class="btn" href="#">Pay and get kit</a>
+        <p class="fine">Stripe link must be added in <code>assets/config.js</code>. After pay, Stripe should send the buyer to <code>/success.html</code>.</p>
+      </div>
+      <div class="pay-card alt">
+        <h2>Value note</h2>
+        <p>$10 is a good beta price. Later, move to $19 or $29 when the kit adds PDF, email save, and lead data.</p>
+        <p>Use this now to get proof and first cash.</p>
+      </div>
+    </section>
+  </main>
+  <footer><b>NewMRR Wealth Group</b><p>Skill. Tool. Rec Rev.</p></footer>
+  <script src="assets/config.js"></script>
+  <script>
+    const pay = document.getElementById('payLink');
+    const link = window.NEWMRR_CONFIG && window.NEWMRR_CONFIG.stripePaymentLink;
+    if (link && !link.includes('REPLACE')) pay.href = link;
+    else {
+      pay.addEventListener('click', (e) => { e.preventDefault(); alert('Add your Stripe Payment Link in assets/config.js first.'); });
+    }
+  </script>
+</body>
+</html>
