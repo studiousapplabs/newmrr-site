@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rec Rev Kit Builder | NewMRR</title>
+  <meta name="description" content="Build a first rec rev kit from a real skill." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="index.html" aria-label="NewMRR home"><span class="mark">↻</span><span>NewMRR</span></a>
+    <nav>
+      <a href="index.html#map">Skill Map</a>
+      <a href="index.html#proof">Proof</a>
+      <a href="kit.html" class="btn small">Kit</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="kit-hero">
+      <p class="eyebrow">Rec Rev Kit Builder</p>
+      <h1>Build the first kit.</h1>
+      <p class="lead">This is the work. We take a skill and turn it into a first offer, tool, price, pitch, lead plan, proof score, and next step.</p>
+    </section>
+
+    <section class="kit-shell">
+      <form id="kitForm" class="kit-form">
+        <div class="form-block">
+          <h2>1. Skill</h2>
+          <label>Name<input name="name" placeholder="Client name" required /></label>
+          <label>Email<input name="email" type="email" placeholder="client@email.com" /></label>
+          <label>Skill<textarea name="skill" required placeholder="What do they know how to do?"></textarea></label>
+          <label>Paid proof<textarea name="paidProof" placeholder="Have they made cash from this yet? How?"></textarea></label>
+        </div>
+
+        <div class="form-block">
+          <h2>2. Buyer</h2>
+          <label>Who needs it?<textarea name="buyer" required placeholder="Who has this pain and can say yes?"></textarea></label>
+          <label>Pain<textarea name="pain" required placeholder="What pain does the buyer want gone?"></textarea></label>
+          <label>Area<input name="area" placeholder="City, niche, job site, web, local, etc." /></label>
+        </div>
+
+        <div class="form-block">
+          <h2>3. Load</h2>
+          <label>Max time each week<input name="time" placeholder="e.g. 3 hrs" /></label>
+          <label>What feels too much?<textarea name="load" placeholder="Tech, sales, price, calls, post, all of it?"></textarea></label>
+          <label>What should NewMRR do?<textarea name="doneFor" placeholder="Build app, write pitch, make sheet, map leads..."></textarea></label>
+        </div>
+
+        <div class="form-block">
+          <h2>4. Goal</h2>
+          <label>Cash goal each mo<input name="goal" placeholder="e.g. 1000" /></label>
+          <label>Best rec rev type<select name="model"><option>Care plan</option><option>Book plan</option><option>Member plan</option><option>Coach plan</option><option>Tool fee</option><option>Lead plan</option><option>Serv plan</option><option>Pack plan</option></select></label>
+          <button class="btn" type="submit">Make Rec Rev Kit</button>
+        </div>
+      </form>
+
+      <aside class="kit-help">
+        <h2>This is not just an app.</h2>
+        <p>The kit makes the sale path clear.</p>
+        <ul>
+          <li>Offer</li>
+          <li>Tool</li>
+          <li>Price</li>
+          <li>Pitch</li>
+          <li>Lead plan</li>
+          <li>Proof score</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="kitResult" class="kit-result" hidden>
+      <div class="kit-actions">
+        <button id="copyKit" class="btn">Copy kit</button>
+        <button id="saveKit" class="btn ghost">Save kit</button>
+        <a id="mailKit" class="btn ghost" href="#">Email lead</a>
+      </div>
+      <div id="kitOutput"></div>
+    </section>
+  </main>
+
+  <footer>
+    <b>NewMRR Wealth Group</b>
+    <p>Skill. Tool. Rec Rev.</p>
+  </footer>
+  <script src="assets/kit.js"></script>
+</body>
+</html>
