@@ -1,7 +1,7 @@
 window.NEWMRR_CONFIG = {
-  // Paste your Stripe Payment Link here.
-  // In Stripe, set the after-payment redirect to:
+  // Stripe Payment Link for Founder Rec Rev Kit.
+  // Stripe should redirect after payment to:
   // https://studiousapplabs.github.io/newmrr-site/success.html
-  stripePaymentLink: 'REPLACE_WITH_STRIPE_PAYMENT_LINK',
+  stripePaymentLink: 'https://buy.stripe.com/5kQfZigBM67Resx8BdfYY0c',
   leadEmail: 'studiousapplabs@gmail.com'
 };
