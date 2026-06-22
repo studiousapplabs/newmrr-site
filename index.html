@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NewMRR Wealth Group | Skill to Rec Rev</title>
+  <meta name="description" content="NewMRR helps folk turn real skill into a clear offer, a tool, a sale path, proof, and rec rev." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#home" aria-label="NewMRR home">
+      <span class="mark">↻</span>
+      <span>NewMRR</span>
+    </a>
+    <nav>
+      <a href="#map">Skill Map</a>
+      <a href="#proof">Proof</a>
+      <a href="#plan">Plan</a>
+      <a href="#start" class="btn small">Start</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Skill → Tool → Rec Rev</p>
+        <h1>You have a skill. We help it earn each mo.</h1>
+        <p class="lead">No new job. No tech fear. No wild leap. We help you find the paid part, shape the offer, build the tool, map the sale, and track the proof.</p>
+        <div class="hero-actions">
+          <a href="#start" class="btn">Get a free Skill Map</a>
+          <a href="#proof" class="btn ghost">See the path</a>
+        </div>
+      </div>
+      <div class="path-card" aria-label="NewMRR path graphic">
+        <div class="node"><span>1</span><b>Skill</b><small>what you know</small></div>
+        <div class="node"><span>2</span><b>Tool</b><small>what we build</small></div>
+        <div class="node"><span>3</span><b>Rec Rev</b><small>what we seek</small></div>
+        <div class="arrow">➜</div>
+      </div>
+    </section>
+
+    <section class="strip">
+      <p>The app is not the end.</p>
+      <p>The path to rec rev is the work.</p>
+      <p>We build that path with you.</p>
+    </section>
+
+    <section id="map" class="grid two">
+      <div>
+        <p class="eyebrow">What this is</p>
+        <h2>A rec rev build firm. Not an app shop.</h2>
+        <p>Cheap app tools can make screens. We help with the part that makes it worth it: what to sell, who to serve, what to charge, how to pitch, and how to test.</p>
+      </div>
+      <div class="card-list">
+        <div class="mini-card"><b>Find</b><span>the paid part</span></div>
+        <div class="mini-card"><b>Shape</b><span>the offer</span></div>
+        <div class="mini-card"><b>Build</b><span>the tool</span></div>
+        <div class="mini-card"><b>Map</b><span>the sale</span></div>
+        <div class="mini-card"><b>Track</b><span>the proof</span></div>
+      </div>
+    </section>
+
+    <section id="proof" class="proof">
+      <p class="eyebrow">Risk cut</p>
+      <h2>Less risk. Less load. More proof.</h2>
+      <div class="risk-grid">
+        <article><h3>Idea risk</h3><p>We map the skill to a paid need.</p></article>
+        <article><h3>Buyer risk</h3><p>We pick who the offer is for.</p></article>
+        <article><h3>Price risk</h3><p>We set a first price to test.</p></article>
+        <article><h3>Tech risk</h3><p>We build. You do not need code.</p></article>
+        <article><h3>Load risk</h3><p>We keep tasks small and clear.</p></article>
+        <article><h3>Sale risk</h3><p>We make the pitch and next step.</p></article>
+      </div>
+    </section>
+
+    <section id="plan" class="grid two dark-card">
+      <div>
+        <p class="eyebrow">How we win</p>
+        <h2>We do not guess. We score the path.</h2>
+        <p>Each lead gets a score for skill, buyer, offer, price, proof, load, and rec rev fit. Data helps us see. Sales help us prove.</p>
+      </div>
+      <div class="score-box">
+        <label>Skill clear <span>82%</span></label><meter value="82" min="0" max="100"></meter>
+        <label>Offer clear <span>74%</span></label><meter value="74" min="0" max="100"></meter>
+        <label>Rec rev fit <span>68%</span></label><meter value="68" min="0" max="100"></meter>
+      </div>
+    </section>
+
+    <section id="start" class="form-wrap">
+      <div class="form-head">
+        <p class="eyebrow">Free Skill Map</p>
+        <h2>Start here.</h2>
+        <p>Tell us what you know. We will map the paid part.</p>
+      </div>
+      <form id="skillForm" class="skill-form">
+        <label>Name<input name="name" required placeholder="Your name" /></label>
+        <label>Email<input name="email" type="email" required placeholder="you@email.com" /></label>
+        <label>Best skill<textarea name="skill" required placeholder="What do folk ask you for help with?"></textarea></label>
+        <label>Who do you help?<textarea name="buyer" placeholder="Who needs this skill most?"></textarea></label>
+        <label>What feels hard?<textarea name="load" placeholder="Tech, time, sales, price, or all of it?"></textarea></label>
+        <button class="btn" type="submit">Make my Skill Map</button>
+      </form>
+      <div id="result" class="result" hidden></div>
+    </section>
+  </main>
+
+  <footer>
+    <b>NewMRR Wealth Group</b>
+    <p>A rec rev firm in Phila. Skill. Tool. Rec Rev.</p>
+    <p>Industrious, 901 Market St, Suite 3020, Phila PA 19107</p>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>
