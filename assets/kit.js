@@ -25,10 +25,10 @@ function buildPreview(data){
   const model = v(data,'model') || 'Care plan';
   const prices = priceSet(v(data,'goal'));
   const proofScore = score(data);
-  return {proofScore, text:`Free preview\n\nSkill: ${skill}\nBuyer: ${buyer}\nPain: ${pain}\nModel: ${model}\nStart price idea: $${prices.low}/mo\nProof score: ${proofScore}/100\n\nUnlock the full Rec Rev Kit for $10.\nIt gives offer, tool, 3 price tests, pitch, text msg, email, first 10 lead plan, risk cut, and next step.`};
+  return {proofScore, text:`Free preview\n\nSkill: ${skill}\nBuyer: ${buyer}\nPain: ${pain}\nModel: ${model}\nStart price idea: $${prices.low}/mo\nProof score: ${proofScore}/100\n\nUnlock the full Founder Rec Rev Kit for $100.\nIt gives offer, tool, 3 price tests, pitch, text msg, email, first 10 lead plan, risk cut, and next step.`};
 }
 function renderPreview(preview){
-  kitOutput.innerHTML = `<div class="kit-score"><b>Preview score</b><span>${preview.proofScore}/100</span><meter value="${preview.proofScore}" min="0" max="100"></meter></div><div class="kit-doc"><h3>FREE PREVIEW</h3>${preview.text.split('\n').map(x => x ? `<p>${x.replace(/</g,'&lt;')}</p>` : '<br>').join('')}<br><a class="btn" href="checkout.html">Unlock full kit for $10</a></div>`;
+  kitOutput.innerHTML = `<div class="kit-score"><b>Preview score</b><span>${preview.proofScore}/100</span><meter value="${preview.proofScore}" min="0" max="100"></meter></div><div class="kit-doc"><h3>FREE PREVIEW</h3>${preview.text.split('\n').map(x => x ? `<p>${x.replace(/</g,'&lt;')}</p>` : '<br>').join('')}<br><a class="btn" href="checkout.html">Unlock full kit for $100</a></div>`;
 }
 kitForm.addEventListener('submit', (e) => {
   e.preventDefault();
